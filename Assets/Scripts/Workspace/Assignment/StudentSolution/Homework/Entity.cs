@@ -10,14 +10,18 @@ namespace Assignment.StudentSolution
 
         public virtual void Update()
         {
+
         }
 
         protected virtual void TakeDamage(int damage)
         {
+            health -= damage;
         }
 
         private void Move(Vector3 direction)
         {
+            position += direction;
         }
     }
 }
+
